@@ -1,5 +1,19 @@
    const { createApp, ref, computed, onMounted } = Vue;
     
+import { ref } from 'vue'
+
+const nombre = ref('')
+const email = ref('')
+const mensaje = ref('')
+
+const enviarFormulario = () => {
+  alert(`Gracias, ${nombre.value}. Tu mensaje ha sido enviado.`)
+  nombre.value = ''
+  email.value = ''
+  mensaje.value = ''
+}
+
+
     createApp({
       setup() {
         const features = ref([

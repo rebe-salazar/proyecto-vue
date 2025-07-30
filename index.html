@@ -1,103 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VUE JS</title>
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />'
+  <link rel="stylesheet" href="./css/styles.css">
 
+  <title>Vue.js Proyecto</title>
 </head>
 
 <body>
-  <div id="app">
-    <header>
-      <div class="container">
-        <nav>
-          <div class="logo">Vue.js</div>
-          <div class="nav-links">
-            <a href="#historia" class="active">Historia</a>
-            <a href="#Caracteristicas">Características</a>
-            <a href="#Ventajas">Ventajas</a>
-            <a href="#Consideraciones">Consideraciones</a>
-          </div>
-        </nav>
-      </div>
-    </header>
-    </section>
-    <section id="history">
-      <div class="container">
-        <h2 title class="section-title">Vue<span>.js</span></h2>
-        <div class="about-content">
-          <div>
-            <img src="./img/vue.png" alt="Logo de Vue - Fuente Icons8</a>" />
-          </div>
-          <div>
-            <p>Vue.js fue creado por Evan You, un desarrollador que anteriormente trabajó en Google en proyectos como
-              Angular. En 2014, Evan decidió construir una herramienta que combinara lo mejor de Angular, pero que fuera
-              más sencilla y flexible.
-              <br>Es muy popular en crear aplicaciones web de una sola página, conocidas como SPAs, y también en
-              construir sistemas administrativos y paneles de control. Además, se integra fácilmente en proyectos que
-              usan un backend tradicional, como Laravel o Django.
-              <br> Es genial para hacer prototipos rápidos de interfaces y para desarrollar aplicaciones progresivas,
-              conocidas como PWA. Lo mejor de Vue es que es muy versátil: puedes usarlo en proyectos pequeños o en
-              arquitecturas empresariales más complejas. También es una opción excelente para estudiantes o para quienes
-              están empezando, ya que no requiere configuraciones complicadas para comenzar a usarlo. Esa fue una de las
-              razones por las que lo elegí para este proyecto.
-              
-            </p>
-            <div class="skills">
-              <span class="skill">2014</span>
-              <span class="skill">SPAs</span>
-              <span class="skill">Evan You</span>
-              <span class="skill">Laravel</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="features">
-      <div class="container">
-        <h2 class="section-title">Principales <span>Características</span></h2>
-        <p>Vue.js es un framework progresivo de JavaScript que se usa para crear interfaces de usuario. Está diseñado para ser muy flexible, permitiéndote empezar con algo sencillo, como mejorar una página estática, o avanzar hasta construir aplicaciones completas y complejas. Una de sus grandes ventajas es que se centra en la capa de vista del patrón MVC, ayudando a mantener el código organizado y fácil de entender, gracias a su enfoque en separar las responsabilidades. Vue trabaja con una sintaxis muy intuitiva basada en HTML, que te permite describir cómo debe lucir la interfaz en función del estado de los datos. Internamente, Vue se encarga de actualizar el DOM de manera rápida y eficiente cuando los datos cambian, usando un sistema reactivo que evita hacer operaciones demasiado costosas. 
-          <br>Además, su sistema de componentes hace posible construir bloques reutilizables y escalables, que son muy útiles especialmente en proyectos grandes, para mantener todo más ordenado. Comparado con otros frameworks como Angular o React, Vue es mucho más sencillo de usar. Mientras Angular necesita que sigas una estructura más rígida y sabes que requiere conocimientos sobre TypeScript, y React necesita trabajar con JSX, Vue te permite empezar con un archivo HTML simple, enlazando un script desde un CDN. Esto lo hace perfecto para estudiantes o personas que están empezando a aprender a programar.</p>
-      </div>
-  </div>
-  </section>
-  <section id="contact">
-    <div class="container">
-      <h2 class="section-title"><span>Contáctenos</span></h2>
-      <form @submit.prevent="submitForm">
-        <div class="form-group">
-          <label for="name">Nombre</label>
-          <input type="text" id="name" v-model="formData.name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" v-model="formData.email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Mensaje</label>
-          <textarea id="message" v-model="formData.message" required></textarea>
-        </div>
-        <button type="submit" class="btn">Enviar mensaje</button>
-      </form>
-      <div class="social-links">
-        <a v-for="(social, index) in socialLinks" :key="index" :href="social.link" target="_blank" class="social-icon"
-          :title="social.name">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path :d="social.iconPath" fill="currentColor" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <div class="container">
-      <p>&copy; 2025  Caso Practico 1 - Rebeca Salazar Alfaro. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-  </div>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
 
 </html>
